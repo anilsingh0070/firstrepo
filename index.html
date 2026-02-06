@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Healthcare FAQ Bot</title>
+</head>
+<body>
+    <h2>Healthcare FAQ Bot</h2>
+
+    <form method="post">
+        <input type="text" name="question" placeholder="Ask health question">
+        <button type="submit">Ask</button>
+    </form>
+
+    {% if answer %}
+        <p><b>Answer:</b> {{ answer }}</p>
+    {% endif %}
+</body>
+</html>
